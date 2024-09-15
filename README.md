@@ -4,31 +4,8 @@ Welcome to the Share Bite Restaurant Website! This website provides a platform f
 
 ## Live Site URL
 
+[Share bite](https://share-bite-626ba.web.app)
 
-
-## Key Features:
-
-- **Menu Exploration:** Browse through our extensive menu categorized into breakfast, lunch, dinner, desserts, and beverages.
-
-- **Responsive Design:** Optimized for all devices - mobile, tablet, and desktop
-
-- **Secure Authentication:** Password and email-based authentication with additional social login options
-
-- **User-Friendly Navigation:** Easy access to all features via navbar links
-
-- **Interactive UI:** Enhanced user experience with sliders, tooltips, and modals
-
-## Features
-
-- **Home:** Explore featured food items, browse through top food, and enjoy a user-friendly interface.
-
-- **All Foods:** Discover a diverse collection of foods from various countries.
-
-- **Add Foods:** Share your own creations by adding new food items to our platform.
-
-- **My Add Foods List:** Manage your own list of added craft items, update details, and track customization options.
-
-- **Login/Register:** Secure access to personalized features with password and email-based authentication, along with social login options.
 
 ## npm Packages Used
 
@@ -54,5 +31,7 @@ Welcome to the Share Bite Restaurant Website! This website provides a platform f
 - Run npm install to install dependencies.
 - Configure Firebase and MongoDB credentials in .env file.
 - Run npm start to start the development server.
-- Access the website at http://localhost:5000.
+
+## Server Site link
+https://github.com/Arittro7/share-bite-server
 

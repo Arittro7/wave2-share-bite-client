@@ -1,7 +1,6 @@
-import  { useState } from 'react';
+import proBnr from '../../assets/copy.png'
 import useAuth from '../../hooks/useAuth';
 import useRole from '../../hooks/useRole';
-import Spinner from '../../components/Spinner/Spinner';
 import useAxiosSecure from '../../hooks/useAxiosSecure';
 
 
@@ -17,7 +16,7 @@ const MyProfile = () => {
             <div className='bg-white shadow-lg rounded-2xl w-3/5'>
                 <img
                     alt='profile'
-                    src='https://wallpapercave.com/wp/wp10784415.jpg'
+                    src={proBnr}
                     className='w-full mb-4 rounded-t-lg h-36'
                 />
                 <div className='flex flex-col items-center justify-center p-4 -mt-16'>
@@ -31,9 +30,9 @@ const MyProfile = () => {
                     <p className='p-2 px-4 text-xs text-white capitalize came bg-pink-500 rounded-full'>
                         {/* {role} */}
                     </p>
-                    <p className='mt-2 text-xl font-medium text-gray-800 '>
+                    {/* <p className='mt-2 text-xl font-medium text-gray-800 '>
                         User Id: {user?.uid}
-                    </p>
+                    </p> */}
                     <div className='w-full p-2 mt-4 rounded-lg'>
                         <div className='flex flex-wrap items-center justify-between text-sm text-gray-600 '>
                             <p className='flex flex-col'>
