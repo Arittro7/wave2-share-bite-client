@@ -5,8 +5,6 @@ import toast from 'react-hot-toast'
 import useAuth from '../../hooks/useAuth'
 import useAxiosSecure from '../../hooks/useAxiosSecure'
 
-
-
 const Register = () => {
   
   const navigate = useNavigate();

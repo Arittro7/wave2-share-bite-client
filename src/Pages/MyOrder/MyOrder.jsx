@@ -4,9 +4,6 @@ import Spinner from "../../components/Spinner/Spinner";
 import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
 
-
-
-
 const MyOrder = () => {
 
   const {user, loading} = useAuth();

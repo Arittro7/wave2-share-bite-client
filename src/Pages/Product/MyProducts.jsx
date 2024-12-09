@@ -6,8 +6,6 @@ import useAuth from '../../hooks/useAuth'
 import useAxiosSecure from '../../hooks/useAxiosSecure'
 
 
-
-
 const MyProducts = () => {
   const { user, loading } = useAuth();
   const [products, setProducts] = useState([])

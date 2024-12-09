@@ -10,10 +10,9 @@ import Slider from './Slider'
 
 export default function Banner() {
 
-
-
   return (
-    <div className='container px-6 py-10 mx-auto rounded-2xl'>
+    <div className='container px-4 py-6 md:px-6 md:py-10 lg:px-8 lg:py-12 mx-auto rounded-2xl'
+>
       <Swiper
         spaceBetween={30}
         centeredSlides={true}
