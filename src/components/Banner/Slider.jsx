@@ -26,7 +26,7 @@ const Slider = ({ image}) => {
           <p className="font-extrabold text-3xl text-[#dc8a03] pb-10 ml-2">
           {typeEffect}
           </p>
-          <p className="text-lg text-slate-200 w-[600px] pb-5  mx-auto">Discover, Share, and Savor the World’s Best Recipes – Join the Ultimate Foodie Community Today and Share Your Culinary Creations with the World!</p>
+          <p className="text-lg text-slate-200 lg:w-[600px] sm:w-[300px] pb-5  mx-auto">Discover, Share, and Savor the World’s Best Recipes – Join the Ultimate Foodie Community Today and Share Your Culinary Creations with the World!</p>
           <br />
           <Link
             to='/all-foods'
