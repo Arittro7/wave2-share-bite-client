@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-pink-800 text-white shadow-lg container px-4 mx-auto rounded-lg">
+    <nav className="navbar bg-pink-800 text-white shadow-lg container px-4 mx-auto rounded-b-lg">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
@@ -100,7 +100,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <ul className="md:hidden bg-pink-800 absolute top-16 left-0 w-full shadow-lg">
+        <ul className="md:hidden flex-col z-10 bg-pink-800 absolute top-16 left-0 w-full shadow-lg">
           <li className="py-2 text-center border-b border-pink-700">
             <Link to="/">Home</Link>
           </li>

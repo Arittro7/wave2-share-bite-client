@@ -25,13 +25,13 @@ const BestFood = () => {
                     <p className='text-[16px] font-medium text-[#666666] mt-10 leading-[30px]'> Codulgence diminution so discovered mr apartments. Are off under folly death wrote cause her way spite. Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing. She sang know now. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature.</p>
                     <div className='mt-10'>
                        <Link to='/all-foods'>
-                       <button className='btn btn-error hover:bg-black border-none text-white'>
+                       <button className='btn btn-error bg-[#9d174d] hover:bg-black border-none text-white'>
                             Explore Menu
                         </button>
                        </Link>
                     </div>
                     </div>
-                        <div className='shadow-md bg-[#8b9710] border py-10 my-10 text-white px-5'>
+                        <div className='shadow-md bg-[#9d174d] border py-10 my-10 text-white px-5'>
                             <div className='space-y-2'>
                             <h3 className='text-xl'>Lunch</h3>
                             <p>Saturday and Sunday</p>
