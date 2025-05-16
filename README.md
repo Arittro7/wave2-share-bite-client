@@ -4,7 +4,7 @@ Welcome to the Share Bite Restaurant Website! This website provides a platform f
 
 ## Live Site URL
 
-[Share bite](https://share-bite-626ba.web.app)
+[Share bite](https://share-bite.netlify.app/)
 
 
 ## npm Packages Used
