@@ -16,6 +16,7 @@ import PrivateRoute from './PrivateRoute';
 import ErrorPage from '../Pages/ErrorPage/ErrorPage';
 import CategoriesCard from '../components/Category/CategoriesCard';
 import MyProfile from '../Pages/MyProfile/MyProfile';
+import Dashboard from '../Pages/Dashboard/Dashboard';
 
 const Routes = createBrowserRouter([
     {
@@ -90,6 +91,12 @@ const Routes = createBrowserRouter([
                 path: '/my-profile',
                 element: <PrivateRoute>
                     <MyProfile/>
+                </PrivateRoute>
+            },
+            {
+                path: '/dashboard',
+                element: <PrivateRoute>
+                    <Dashboard/>
                 </PrivateRoute>
             }
         ])
