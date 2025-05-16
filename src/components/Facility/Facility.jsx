@@ -6,7 +6,7 @@ import Lottie from "lottie-react";
 
 const Facility= () => {
   return (
-    <div className="information-section container lg:max-w-screen-xl  my-10 mx-auto ">
+    <div className="information-section container px-2 my-10 mx-auto ">
       <div>
           <h2 className="text-4xl font-bold text-center my-20">We are Provided</h2>
       </div>

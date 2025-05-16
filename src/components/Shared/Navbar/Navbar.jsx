@@ -28,7 +28,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="navbar bg-pink-800 text-white shadow-lg container px-4 mx-auto rounded-b-lg">
+    <nav className="navbar bg-pink-800 text-white shadow-lg container px-4  ">
       <div className="flex items-center justify-between w-full">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2">

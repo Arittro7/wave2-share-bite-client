@@ -3,7 +3,7 @@ import logo from "../../assets/logo.jpeg";
 
 const Footer = () => {
   return (
-    <section className="flex flex-col border-t-2 font-poppins my-10 bg-[#9d174d] container mx-auto rounded-b-2xl h-full">
+    <section className="flex flex-col border-t-2 font-poppins my-10 bg-[#9d174d] container mx-auto  h-full">
       <div className="w-full h-full text-white">
         <div className="justify-center flex-1 max-w-6xl px-4 py-4 mx-auto lg:py-0">
           <div className="flex flex-wrap py-10 -mx-3">

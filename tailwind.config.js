@@ -15,6 +15,13 @@ export default {
         white: '#fff',
       },
     },
+    container: {
+      center: false,
+      padding: '0',
+      screens: {
+        DEFAULT: '100%',
+      },
+    },
   },
   plugins: [
     require('daisyui'),
