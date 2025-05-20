@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import useAuth from "../../hooks/useAuth";
 import Spinner from "../Spinner/Spinner";
-import axios from "axios";
 import CategoriesFile from "./CategoriesFile";
+import { axiosSecure } from "../../hooks/useAxiosSecure";
 
 const Categories = () => {
   const [categories, setCategories] = useState([]);
@@ -11,7 +11,7 @@ const Categories = () => {
   useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await axios(`${import.meta.env.VITE_API_URL}/categories`);
+        const { data } = await axiosSecure(`${import.meta.env.VITE_API_URL}/categories`);
         setCategories(data);
       } catch (error) {
         console.error("Error fetching categories:", error);
