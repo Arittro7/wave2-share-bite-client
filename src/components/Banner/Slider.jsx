@@ -30,7 +30,7 @@ const Slider = ({ image}) => {
           <br />
           <Link
             to='/all-foods'
-            className='w-full px-5 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform rounded-md lg:w-auto className="btn border-2 btn-outline hover:bg-gradient-to-r from-[#dc8a03] to-[#8b9710]'
+            className='w-full px-5 py-4 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform rounded-md lg:w-auto className="btn border-2 btn-outline hover:bg-gradient-to-r from-[#dc8a03] to-[#8b9710]' 
           >
             Explore All Foods
           </Link>

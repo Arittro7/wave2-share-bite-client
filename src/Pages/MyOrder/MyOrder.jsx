@@ -3,6 +3,7 @@ import toast from "react-hot-toast";
 import Spinner from "../../components/Spinner/Spinner";
 import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import Dashboard from "../Dashboard/Dashboard";
 
 const MyOrder = () => {
 
@@ -42,9 +43,12 @@ const MyOrder = () => {
 
 
     return (
-      <section className='container px-4 mx-auto pt-12'>
-       
-        <div className='flex items-center gap-x-3'>
+      <section className='container flex px-4 mx-auto pt-12'>
+       <div>
+        <Dashboard></Dashboard>
+       </div>
+        <div>
+          <div className='flex items-center gap-x-3'>
           <h2 className='text-lg font-medium text-gray-800 '>My Order</h2>
   
           <span className='px-3 py-1 text-xs text-blue-600 bg-blue-100 rounded-full '>
@@ -192,6 +196,7 @@ const MyOrder = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
     )

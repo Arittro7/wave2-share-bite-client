@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link, NavLink, useNavigate } from "react-router-dom";
 import logo from "../../../assets/logo.jpeg";
 import userIcon from "../../../assets/user1.png";
@@ -13,6 +13,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [showUserMenu, setShowUserMenu] = useState(false);
   const navigate = useNavigate();
+  const dropdownRef = useRef(null);
 
   useEffect(() => {
     const localTheme = localStorage.getItem("theme") || "light";
@@ -47,6 +48,22 @@ const Navbar = () => {
   };
 
   const profileImage = !user ? userIcon : user.photoURL || loginUser;
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowUserMenu(false);
+      }
+    };
+
+    if (showUserMenu) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [showUserMenu]);
 
   return (
     <nav className="navbar bg-pink-800 text-white shadow-lg container px-4 relative">
@@ -91,9 +108,8 @@ const Navbar = () => {
           
           {/* Private routes */}
          {user && <li><NavLink to='/my-order'>Orders</NavLink></li>}
-          {/* Private routes */}
-          {/* Profile Icon */}
 
+          {/* Profile Icon */}
           <li className="relative">
             <button onClick={handleProfileClick} className="focus:outline-none">
               <img
@@ -105,7 +121,10 @@ const Navbar = () => {
 
             {/* Dropdown */}
             {user && showUserMenu && (
-              <div className="absolute right-0 mt-2 w-40 bg-white text-black rounded-md shadow-lg z-20">
+              <div
+                ref={dropdownRef}
+                className="absolute right-0 mt-2 w-40 bg-white text-black rounded-md shadow-lg z-20"
+              >
                 <Link
                   to='/my-profile'
                   className="block px-4 py-2 hover:bg-gray-100"
@@ -166,5 +185,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

@@ -4,6 +4,7 @@ import toast from "react-hot-toast";
 import Spinner from "../../components/Spinner/Spinner";
 import useAuth from "../../hooks/useAuth";
 import useAxiosSecure from "../../hooks/useAxiosSecure";
+import Dashboard from "../Dashboard/Dashboard";
 
 
 
@@ -74,8 +75,11 @@ const Purchase = () => {
 
   return (
     <div className="container mx-auto my-10">
-
-      <div className="flex flex-col md:flex-row justify-around gap-5 items-center min-h-[calc(100vh-306px)] md:max-w-screen-xl mx-auto">
+      <div>
+        <Dashboard></Dashboard>
+      </div>
+      <div>
+        <div className="flex flex-col md:flex-row justify-around gap-5 items-center min-h-[calc(100vh-306px)] md:max-w-screen-xl mx-auto">
         <section className="p-6 w-full bg-white rounded-md shadow-md flex-1 md:min-h-[350px]">
           <h2 className="text-lg font-semibold text-gray-700 capitalize">
             Place A Purchase
@@ -157,6 +161,7 @@ const Purchase = () => {
             </form>
           </div>
         </section>
+      </div>
       </div>
     </div>
   );
